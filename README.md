@@ -131,6 +131,10 @@ Just wait for a while, you will found `cql.html` showing results like this:
 
 ![](./example.png)
 
+```
+docker image build -t cookiescanner:0.1 .
+docker container run -it  --privileged  --entrypoint "sh" cookiescanner:0.1
+```
 
 ```
 /usr/bin/chromium-browser --headless --no-sandbox --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 &
