@@ -131,3 +131,11 @@ Just wait for a while, you will found `cql.html` showing results like this:
 
 ![](./example.png)
 
+
+```
+/usr/bin/chromium-browser --headless --no-sandbox --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 &
+
+wget https://github.com/CovenantSQL/CookieScanner/archive/master.zip
+unzip master
+/app/CookieScanner cli --verbose --headless --classifier "covenantsql://050cdf3b860c699524bf6f6dce28c4f3e8282ac58b0e410eb340195c379adc3a?config=./CookieScanner-master/config/config.yaml" --json covenantsql.io
+```
